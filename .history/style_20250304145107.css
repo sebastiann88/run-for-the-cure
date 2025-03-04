@@ -102,7 +102,7 @@ canvas#image-sequence {
 .portfolio-button-link {
   position: fixed;
   display: none;
-  left: 49.3%;
+  left: 48%;
   bottom: 0.75em;
   transform: translate(-50%, -50%);
   max-width: 1280px;
