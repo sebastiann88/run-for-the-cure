@@ -11,26 +11,7 @@ body {
 
 main {
   position: static;
-  color: #fa729b;
-  z-index: 999;
-  font-family: "Oxygen", sans-serif;
-  font-weight: 300;
-  font-style: normal;
-}
-
-.container {
-  width: 100%;
-  max-width: 40em;
-  margin: 0 auto;
-}
-
-.container h2 {
-  display: flex;
-  height: 100vh;
-  align-items: center;
-  justify-content: center;
-  line-height: 1.145;
-  padding: 0 15px;
+  color: #f889ad;
   z-index: 999;
 }
 
