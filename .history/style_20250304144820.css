@@ -103,11 +103,11 @@ canvas#image-sequence {
   position: fixed;
   display: none;
   left: 48%;
-  bottom: 0.75em;
+  bottom: 1.25em;
   transform: translate(-50%, -50%);
   max-width: 1280px;
   text-align: center;
-  font-size: 3.125vw;
+  font-size: 2.85vw;
   font-family: "Oswald", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
@@ -121,8 +121,8 @@ canvas#image-sequence {
 }
 
 .portfolio-button-link-title {
-  bottom: 2.125em;
-  font-size: 2.875vw;
+  bottom: 1.125em;
+  font-size: 3.125vw;
   font-weight: 300;
   color: #fd9eb9;
   margin-left: 0.325em;
