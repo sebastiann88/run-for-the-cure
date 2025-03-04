@@ -126,7 +126,7 @@ canvas#image-sequence {
 }
 
 .portfolio-button-link-title {
-  bottom: 2.75em;
+  bottom: 2.5em;
   /* font-size: 2.875vw; */
   font-weight: 300;
   color: #fd9eb9;
@@ -181,6 +181,6 @@ img.up-arrow {
 
 @media (min-width: 1200px) {
   .portfolio-button-link-title {
-    bottom: 2.65em;
+    bottom: 2.75em;
   }
 }

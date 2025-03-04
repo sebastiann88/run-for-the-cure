@@ -177,10 +177,3 @@ a.portfolio-button-link:hover {
 img.up-arrow {
   width: 5em;
 }
-
-
-@media (min-width: 1200px) {
-  .portfolio-button-link-title {
-    bottom: 2.65em;
-  }
-}

@@ -108,7 +108,7 @@ canvas#image-sequence {
   position: fixed;
   display: none;
   left: 49.3%;
-  bottom: 3.125em;
+  bottom: 3em;
   transform: translate(-50%, -50%);
   max-width: 1280px;
   text-align: center;
@@ -126,7 +126,7 @@ canvas#image-sequence {
 }
 
 .portfolio-button-link-title {
-  bottom: 2.75em;
+  bottom: 2.5em;
   /* font-size: 2.875vw; */
   font-weight: 300;
   color: #fd9eb9;
@@ -176,11 +176,4 @@ a.portfolio-button-link:hover {
 
 img.up-arrow {
   width: 5em;
-}
-
-
-@media (min-width: 1200px) {
-  .portfolio-button-link-title {
-    bottom: 2.65em;
-  }
 }
