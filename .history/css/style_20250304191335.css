@@ -24,7 +24,7 @@ main {
   margin: 0 auto;
 }
 
-.container section > h2 {
+.container > h2 {
   display: flex;
   height: 100vh;
   align-items: center;
@@ -105,7 +105,6 @@ canvas#image-sequence {
   height: 2em;
   margin: 0 auto;
   pointer-events: none;
-  opacity: 0;
 }
 
 .portfolio-fade-in-link {
@@ -114,7 +113,6 @@ canvas#image-sequence {
   width: 2em;
   height: 2em;
   margin: 0 auto;
-  opacity: 0;
 }
 
 .animation-fade-out {
@@ -151,7 +149,6 @@ canvas#image-sequence {
   color: #fc7ea4;
   margin-left: 0.325em;
   transition: 0.2s;
-  opacity: 0;
 }
 
 .portfolio-button-link-title {
@@ -176,10 +173,10 @@ a.portfolio-button-link:hover {
   display: block;
 }
 
-#container,
+/* #container,
 .portfolio {
   opacity: 0;
-}
+} */
 
 #image-sequence {
   position: fixed;

@@ -10,7 +10,6 @@ body {
 }
 
 main {
-  position: static;
   color: #fa729b;
   z-index: 999;
   font-family: "Oxygen", sans-serif;
@@ -24,7 +23,7 @@ main {
   margin: 0 auto;
 }
 
-.container section > h2 {
+.container > h2 {
   display: flex;
   height: 100vh;
   align-items: center;

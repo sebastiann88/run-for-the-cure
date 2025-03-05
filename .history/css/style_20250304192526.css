@@ -24,7 +24,7 @@ main {
   margin: 0 auto;
 }
 
-.container section > h2 {
+.container div > h2 {
   display: flex;
   height: 100vh;
   align-items: center;

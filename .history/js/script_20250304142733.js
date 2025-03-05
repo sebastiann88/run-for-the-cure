@@ -57,4 +57,16 @@ icon.onclick = function() {
   }
 }
 
+// Giff
+
+
+
+// Scroll to Top
+
+// window.scroll({
+//   top: 0, 
+//   left: 0, 
+//   behavior: 'smooth',
+// });
+
 });
