@@ -27,7 +27,7 @@ gsap.to('.section-1', {
 		toggleClass: {targets: ".section-1", className: ".portfolio-hide"}
 
 	},
- 	duration: 0.8,
+ 	duration: 0.5,
  	opacity: 1
 })
 
@@ -38,7 +38,7 @@ gsap.to('.section-2', {
 		toggleClass: {targets: ".section-2", className: ".portfolio-hide"}
 
 	},
- 	duration: 0.8,
+ 	duration: 0.5,
  	opacity: 1
 })
 
@@ -49,7 +49,7 @@ gsap.to('.section-3', {
 		toggleClass: {targets: ".section-3", className: ".portfolio-hide"}
 
 	},
- 	duration: 0.8,
+ 	duration: 0.5,
  	opacity: 1
 })
 
@@ -60,7 +60,7 @@ gsap.to('.section-4', {
 		toggleClass: {targets: ".section-4", className: ".portfolio-hide"}
 
 	},
- 	duration: 0.8,
+ 	duration: 0.5,
  	opacity: 1
 })
 
@@ -71,7 +71,7 @@ gsap.to('.section-5', {
 		toggleClass: {targets: ".section-5", className: ".portfolio-hide"}
 
 	},
- 	duration: 0.8,
+ 	duration: 0.5,
  	opacity: 1
 })
 

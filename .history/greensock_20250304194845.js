@@ -20,58 +20,58 @@
 
 // Portfolio
 
-gsap.to('.section-1', {
+gsap.to('.description', {
 	scrollTrigger: {
-		trigger: ".section-1",
+		trigger: ".portfolio-fade-in-link",
 		toggleActions: "play none none reverse",
 		toggleClass: {targets: ".section-1", className: ".portfolio-hide"}
 
 	},
- 	duration: 0.8,
+ 	duration: 0.5,
  	opacity: 1
 })
 
-gsap.to('.section-2', {
+gsap.to('.description', {
 	scrollTrigger: {
-		trigger: ".section-2",
+		trigger: ".portfolio-fade-in-link",
 		toggleActions: "play none none reverse",
 		toggleClass: {targets: ".section-2", className: ".portfolio-hide"}
 
 	},
- 	duration: 0.8,
+ 	duration: 0.5,
  	opacity: 1
 })
 
-gsap.to('.section-3', {
+gsap.to('.description', {
 	scrollTrigger: {
-		trigger: ".section-3",
+		trigger: ".portfolio-fade-in-link",
 		toggleActions: "play none none reverse",
 		toggleClass: {targets: ".section-3", className: ".portfolio-hide"}
 
 	},
- 	duration: 0.8,
+ 	duration: 0.5,
  	opacity: 1
 })
 
-gsap.to('.section-4', {
+gsap.to('.description', {
 	scrollTrigger: {
-		trigger: ".section-4",
+		trigger: ".portfolio-fade-in-link",
 		toggleActions: "play none none reverse",
 		toggleClass: {targets: ".section-4", className: ".portfolio-hide"}
 
 	},
- 	duration: 0.8,
+ 	duration: 0.5,
  	opacity: 1
 })
 
-gsap.to('.section-5', {
+gsap.to('.description', {
 	scrollTrigger: {
-		trigger: ".section-5",
+		trigger: ".portfolio-fade-in-link",
 		toggleActions: "play none none reverse",
 		toggleClass: {targets: ".section-5", className: ".portfolio-hide"}
 
 	},
- 	duration: 0.8,
+ 	duration: 0.5,
  	opacity: 1
 })
 
