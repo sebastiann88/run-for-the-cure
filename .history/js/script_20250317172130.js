@@ -52,10 +52,10 @@ $('html').imagesLoaded(function() {
   icon.onclick = function() {
     if (mySong.paused) {
       mySong.play();
-      icon.src = "./media/pause.png";
+      icon.src = "./assets/media/pause.png";
     } else {
       mySong.pause();
-      icon.src = "./media/play.png";
+      icon.src = "./assets/media/play.png";
     }
   };
 
