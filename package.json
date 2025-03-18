@@ -33,6 +33,7 @@
   "type": "module",
   "build": "GENERATE_SOURCEMAP=true react-scripts",
   "dependencies": {
+    "gsap": "^3.12.7",
     "imagesloaded": "^5.0.0"
   }
 }
