@@ -4,7 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CIBC Run for the Cure</title>
-    <script defer="defer" src="./static/js/main.f63bae6c.js"></script>
+    <script
+      type="text/javascript"
+      defer="defer"
+      src="./js/main.f63bae6c.js"
+    ></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -15,10 +19,11 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
     />
-    <link rel="stylesheet" href="./css/animate.min.css" />
-    <link rel="stylesheet" href="./css/typography.css" />
-    <link rel="stylesheet" href="./css/style.css" />
-    <link rel="stylesheet" href="./css/root.css" />
+    
+    
+    
+    
+    <!-- <script src="https://dist.pixotronics.com/webgi/runtime/viewer-0.10.4.js"></script> -->
     <!-- 
     // Performance tips and what to
     // 0. Resize
@@ -29,11 +34,16 @@
     // 5. Device Pixel Ratio
     // 6. Debug performance
     -->
+    <script type="module" crossorigin src="/assets/index-3e9ac439.js"></script>
+    <link rel="stylesheet" href="/assets/index-7d39505c.css">
   </head>
   <body id="#top">
-    <div id="root"></div>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <!-- <div id="root"></div> -->
+    <div id="webgi-canvas-container">
+      <canvas id="webgi-canvas"></canvas>
+    </div>
     <main id="main" class="container">
-      <noscript>You need to enable JavaScript to run this app.</noscript>
       <section
         class="animate__animated animate__fadeInRight wow"
         data-wow-duration="1.2s"
@@ -97,12 +107,12 @@
 
       <div class="play-button-container">
         <div class="play-button">
-          <img id="icon" src="./media/play.png" />
+          <img id="icon" src="/assets/play-569ede10.png" />
         </div>
       </div>
 
       <audio id="mySong">
-        <source src="./media/music.mp3" type="audio/mp3" />
+        <source src="/assets/music-4143ed14.mp3" type="audio/mp3" />
       </audio>
 
       <div class="portfolio-link">
@@ -139,20 +149,26 @@
     <script src="./greensock/ScrollTrigger.min.js.map"></script>
     <!-- partial -->
     <script src="./js/script.js"></script>
-    <script src="./greensock.js"></script>
-    <script type="module" src="./mousewave/app.js"></script>
-    <script type="script" defer="defer" src="./js/syncscroll.js"></script>
-    <!-- <script>
-      const left = document.querySelector("#root");
-      const right = document.querySelector("#main");
-      const body = document.body;
-      window.onscroll = function () {
-        let progress =
-          body.scrollTop / (body.scrollHeight - window.innerHeight);
-        let difference = right.offsetHeight - left.offsetHeight;
-        left.style.top = Math.ceil(difference * progress) + "px";
-        console.log(`progress: ${progress}, difference: ${difference}`);
-      };
-    </script> -->
+    <script src="./js/greensock.js"></script>
+    <script
+      type="text/javascript"
+      defer="defer"
+      src="./js/syncscroll.js"
+    ></script>
+    
+    <canvas id="webgi-canvas"></canvas>
+    
+    <script>
+      // const left = document.querySelector("#root");
+      // const right = document.querySelector("#main");
+      // const body = document.body;
+      // window.onscroll = function () {
+      //   let progress =
+      //     body.scrollTop / (body.scrollHeight - window.innerHeight);
+      //   let difference = right.offsetHeight - left.offsetHeight;
+      //   left.style.top = Math.ceil(difference * progress) + "px";
+      //   console.log(`progress: ${progress}, difference: ${difference}`);
+      // };
+    </script>
   </body>
 </html>
