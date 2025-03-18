@@ -1,3 +1,8 @@
+import { gsap } from "/assets/greensock/gsap.min.js";
+import { ScrollTrigger } from "/assets/greensock/ScrollTrigger.min.js";
+
+gsap.registerPlugin(ScrollTrigger);
+
 // Portfolio
 
 gsap.to('.section-1', {

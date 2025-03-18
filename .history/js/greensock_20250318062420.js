@@ -1,3 +1,28 @@
+import { gsap } from "/node_modules/gsap/index.js";
+import { ScrollTrigger } from "/node_modules/gsap/ScrollTrigger.js";
+
+gsap.registerPlugin(ScrollTrigger);
+
+// Animation
+
+// gsap.to('#image-sequence', {
+// 	scrollTrigger: {
+// 		trigger: ".animation-fade-out",
+// 		toggleActions: "play none none reverse"
+// 	},
+//  	opacity: 0,
+//  	duration: 0.95,
+// })
+
+// gsap.to('.play-button-container', {
+// 	scrollTrigger: {
+// 		trigger: ".animation-fade-out",
+// 		toggleActions: "play none none reverse"
+// 	},
+//  	opacity: 0,
+//  	duration: 0.95,
+// })
+
 // Portfolio
 
 gsap.to('.section-1', {

@@ -1,3 +1,28 @@
+import { gsap } from "/assets/greensock/gsap.min.js";
+import { ScrollTrigger } from "assets/greensock/ScrollTrigger.min.js";
+
+gsap.registerPlugin(ScrollTrigger);
+
+// Animation
+
+// gsap.to('#image-sequence', {
+// 	scrollTrigger: {
+// 		trigger: ".animation-fade-out",
+// 		toggleActions: "play none none reverse"
+// 	},
+//  	opacity: 0,
+//  	duration: 0.95,
+// })
+
+// gsap.to('.play-button-container', {
+// 	scrollTrigger: {
+// 		trigger: ".animation-fade-out",
+// 		toggleActions: "play none none reverse"
+// 	},
+//  	opacity: 0,
+//  	duration: 0.95,
+// })
+
 // Portfolio
 
 gsap.to('.section-1', {
