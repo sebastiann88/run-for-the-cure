@@ -34,6 +34,7 @@
   "build": "GENERATE_SOURCEMAP=false react-scripts",
   "dependencies": {
     "gsap": "^3.12.7",
-    "imagesloaded": "^5.0.0"
+    "imagesloaded": "^5.0.0",
+    "rollup-plugin-ignore": "^1.0.10"
   }
 }
