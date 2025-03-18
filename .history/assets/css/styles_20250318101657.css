@@ -49,7 +49,7 @@ main.container section.animate__animated {
 
 @media (min-width: 1200px) {
 	body {
-		max-width: 75m;
+		max-width: 80em;
 	}
 
 	.container > section {
@@ -59,10 +59,10 @@ main.container section.animate__animated {
 
 @media (min-width: 1400px) {
 	body {
-		max-width: 80em;
+		max-width: 70em;
 	}
 
 	.container > section {
-		padding: 0 0 0 8%;
+		padding: 0 0 0 5%;
 	}
 }
