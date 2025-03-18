@@ -4,7 +4,7 @@ import { terser } from 'rollup-plugin-terser';
 import ignore from '@rollup/plugin-ignore';
 
 export default {
-  input: './src/greensock.js',
+  input: './assets/src/greensock.js',
   output: {
     file: './dist/bundle.js',
     format: 'iife',

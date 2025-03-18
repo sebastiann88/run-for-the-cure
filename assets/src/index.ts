@@ -24,7 +24,7 @@ import {
     // Color, // Import THREE.js internals
     // Texture, // Import THREE.js internals
 } from "webgi";
-import "/css/styles.css";
+"import ./assets/css/styles.css";
 
 async function setupViewer(){
 

@@ -4,7 +4,7 @@ import {
   addBasePlugins,
   timeout
 } from "https://dist.pixotronics.com/webgi/runtime/bundle-0.9.20.mjs";
-import { manager } from './js/loader.js';
+import { manager } from './assets/js/loader.js';
 
 // Check the Documentation and Manual Here: https://webgi.xyz/docs
 

@@ -3,7 +3,7 @@ import commonjs from '@rollup/plugin-commonjs';
 import { terser } from 'rollup-plugin-terser';
 
 export default {
-  input: './src/greensock.js',
+  input: './assets/src/greensock.js',
   output: {
     file: './dist/bundle.js',
     format: 'iife',
