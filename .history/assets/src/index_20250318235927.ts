@@ -26,7 +26,7 @@ import {
 } from "webgi";
 import "../css/styles.css"; // Corrected import path
 
-async function setupViewer() {
+async function setupViewer(){
 
     // Initialize the viewer
     const viewer = new ViewerApp({
