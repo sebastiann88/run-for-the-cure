@@ -46,7 +46,7 @@ canvas {
   width: 100%!important;
   height: 100%!important;
   top: 0;
-  left: 17%;
+  left: 5%;
   margin: 0!important;
   border-radius: 0!important;
   box-shadow: none!important;
@@ -54,28 +54,59 @@ canvas {
 
 @media (min-width: 480px) {
   #webgi-canvas-container {
-    left: 18%;
-  }
+    left: 5%;
 }
 
 @media (min-width: 768px) {
-  #webgi-canvas-container {
-    left: 27.5%
-  }
+	body {
+		max-width:80em;
+	}
+
+	.container > section {
+		padding: 0 0 0 10%;
+	}
 }
 
 @media (min-width: 992px) {
+	body {
+		max-width: 80em;
+	}
 
+	.container > section {
+		padding: 0 0 0 10%;
+		max-width: 30em;
+	}
 }
 
 @media (min-width: 1200px) {
+	body {
+		max-width: 75m;
+	}
 
+	.container > section {
+		padding: 0 0 0 20%;
+		max-width: 32em;
+	}
 }
 
 @media (min-width: 1450px) {
+	body {
+		max-width: 85em;
+	}
 
+	.container > section {
+		padding: 0 20%;
+		max-width: 50em;
+	}
 }
 
 @media (min-width: 1800px) {
+	body {
+		max-width: 85em;
+	}
 
+	.container > section {
+		padding: 0 20%;
+		max-width: 65em;
+	}
 }
