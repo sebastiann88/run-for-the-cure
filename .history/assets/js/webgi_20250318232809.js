@@ -16,7 +16,7 @@ async function setupViewer() {
   });
 
   // Apply CSS filter to the canvas
-  // document.getElementById("webgi-canvas").style.filter = "saturate(1.80)";
+  document.getElementById("webgi-canvas").style.filter = "saturate(1.80)";
 
   await addBasePlugins(viewer, { interactionPrompt: false });
 
@@ -59,7 +59,7 @@ async function setupViewer() {
   const exposureShader = {
     uniforms: {
       "tDiffuse": { value: null },
-      "exposure": { value: 1.5 } // Adjust this value to increase or decrease exposure
+      "exposure": { value: 1.70 } // Adjust this value to increase or decrease exposure
     },
     vertexShader: `
       varying vec2 vUv;

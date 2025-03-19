@@ -5,9 +5,9 @@ import {
   timeout
 } from "https://dist.pixotronics.com/webgi/runtime/bundle-0.9.20.mjs";
 
-import { EffectComposer } from 'https://cdn.jsdelivr.net/npm/three@0.137.5/examples/jsm/postprocessing/EffectComposer.js';
-import { RenderPass } from 'https://cdn.jsdelivr.net/npm/three@0.137.5/examples/jsm/postprocessing/RenderPass.js';
-import { ShaderPass } from 'https://cdn.jsdelivr.net/npm/three@0.137.5/examples/jsm/postprocessing/ShaderPass.js';
+// import { EffectComposer } from 'https://cdn.jsdelivr.net/npm/three@0.137.5/examples/jsm/postprocessing/EffectComposer.js';
+// import { RenderPass } from 'https://cdn.jsdelivr.net/npm/three@0.137.5/examples/jsm/postprocessing/RenderPass.js';
+// import { ShaderPass } from 'https://cdn.jsdelivr.net/npm/three@0.137.5/examples/jsm/postprocessing/ShaderPass.js';
 
 async function setupViewer() {
   // Initialize the viewer
@@ -16,7 +16,7 @@ async function setupViewer() {
   });
 
   // Apply CSS filter to the canvas
-  // document.getElementById("webgi-canvas").style.filter = "saturate(1.80)";
+  document.getElementById("webgi-canvas").style.filter = "saturate(1.80)";
 
   await addBasePlugins(viewer, { interactionPrompt: false });
 
@@ -79,7 +79,7 @@ async function setupViewer() {
       }
     `
   };
-
+  
   const exposurePass = new ShaderPass(exposureShader);
   composer.addPass(exposurePass);
 

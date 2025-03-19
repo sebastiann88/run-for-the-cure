@@ -16,7 +16,7 @@ async function setupViewer() {
   });
 
   // Apply CSS filter to the canvas
-  // document.getElementById("webgi-canvas").style.filter = "saturate(1.80)";
+  document.getElementById("webgi-canvas").style.filter = "saturate(1.80)";
 
   await addBasePlugins(viewer, { interactionPrompt: false });
 
@@ -79,7 +79,7 @@ async function setupViewer() {
       }
     `
   };
-
+  
   const exposurePass = new ShaderPass(exposureShader);
   composer.addPass(exposurePass);
 

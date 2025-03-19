@@ -4,7 +4,6 @@ import {
   addBasePlugins,
   timeout
 } from "https://dist.pixotronics.com/webgi/runtime/bundle-0.9.20.mjs";
-
 import { EffectComposer } from 'https://cdn.jsdelivr.net/npm/three@0.137.5/examples/jsm/postprocessing/EffectComposer.js';
 import { RenderPass } from 'https://cdn.jsdelivr.net/npm/three@0.137.5/examples/jsm/postprocessing/RenderPass.js';
 import { ShaderPass } from 'https://cdn.jsdelivr.net/npm/three@0.137.5/examples/jsm/postprocessing/ShaderPass.js';
@@ -16,7 +15,7 @@ async function setupViewer() {
   });
 
   // Apply CSS filter to the canvas
-  // document.getElementById("webgi-canvas").style.filter = "saturate(1.80)";
+  document.getElementById("webgi-canvas").style.filter = "saturate(1.28)";
 
   await addBasePlugins(viewer, { interactionPrompt: false });
 
@@ -51,37 +50,10 @@ async function setupViewer() {
   // Start the animation
   gltfAnim.playAnimation();
 
-  // Post-processing for contrast adjustment
+  // Post-processing for saturation adjustment
   const composer = new EffectComposer(viewer.renderer);
   const renderPass = new RenderPass(viewer.scene, viewer.scene.activeCamera);
   composer.addPass(renderPass);
-
-  const exposureShader = {
-    uniforms: {
-      "tDiffuse": { value: null },
-      "exposure": { value: 1.5 } // Adjust this value to increase or decrease exposure
-    },
-    vertexShader: `
-      varying vec2 vUv;
-      void main() {
-        vUv = uv;
-        gl_Position = projectionMatrix * modelViewMatrix * vec4(position, 1.0);
-      }
-    `,
-    fragmentShader: `
-      uniform sampler2D tDiffuse;
-      uniform float exposure;
-      varying vec2 vUv;
-      void main() {
-        vec4 color = texture2D(tDiffuse, vUv);
-        color.rgb *= exposure;
-        gl_FragColor = color;
-      }
-    `
-  };
-
-  const exposurePass = new ShaderPass(exposureShader);
-  composer.addPass(exposurePass);
 
   const saturationShader = {
     uniforms: {
@@ -110,33 +82,6 @@ async function setupViewer() {
 
   const saturationPass = new ShaderPass(saturationShader);
   composer.addPass(saturationPass);
-
-  const contrastShader = {
-    uniforms: {
-      "tDiffuse": { value: null },
-      "contrast": { value: 1.40 } // Adjust this value to increase or decrease contrast
-    },
-    vertexShader: `
-      varying vec2 vUv;
-      void main() {
-        vUv = uv;
-        gl_Position = projectionMatrix * modelViewMatrix * vec4(position, 1.0);
-      }
-    `,
-    fragmentShader: `
-      uniform sampler2D tDiffuse;
-      uniform float contrast;
-      varying vec2 vUv;
-      void main() {
-        vec4 color = texture2D(tDiffuse, vUv);
-        color.rgb = (color.rgb - 0.5) * contrast + 0.5;
-        gl_FragColor = color;
-      }
-    `
-  };
-
-  const contrastPass = new ShaderPass(contrastShader);
-  composer.addPass(contrastPass);
 
   function animate() {
     requestAnimationFrame(animate);

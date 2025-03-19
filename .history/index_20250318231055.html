@@ -25,16 +25,22 @@
     <link rel="stylesheet" href="./assets/src/style.css" />
     <link rel="stylesheet" href="./assets/css/root.css" />
 
-    <!-- <script type="importmap">
+    <script type="importmap">
       {
-        "imports": {
-          "three": "./node_modules/three/build/three.module.js",
-          "EffectComposer": "https://cdn.jsdelivr.net/npm/three@0.137.5/examples/jsm/postprocessing/EffectComposer.js",
-          "RenderPass": "https://cdn.jsdelivr.net/npm/three@0.137.5/examples/jsm/postprocessing/RenderPass.js",
-          "ShaderPass": "https://cdn.jsdelivr.net/npm/three@0.137.5/examples/jsm/postprocessing/ShaderPass.js"
-        }
+          "imports": {
+              "three": "./build/three.module.js",
+              "https://cdn.jsdelivr.net/npm/three@0.137.5/examples/jsm/postprocessing/EffectComposer.js,
+              "three/examples/jsm/libs/stats.module":"./jsm/libs/stats.module.js",
+          }
       }
-    </script> -->
+    </script>
+
+    import { EffectComposer } from
+    'https://cdn.jsdelivr.net/npm/three@0.137.5/examples/jsm/postprocessing/EffectComposer.js';
+    import { RenderPass } from
+    'https://cdn.jsdelivr.net/npm/three@0.137.5/examples/jsm/postprocessing/RenderPass.js';
+    import { ShaderPass } from
+    'https://cdn.jsdelivr.net/npm/three@0.137.5/examples/jsm/postprocessing/ShaderPass.js';
   </head>
   <body id="#top">
     <noscript>You need to enable JavaScript to run this app.</noscript>

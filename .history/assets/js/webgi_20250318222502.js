@@ -4,7 +4,6 @@ import {
   addBasePlugins,
   timeout
 } from "https://dist.pixotronics.com/webgi/runtime/bundle-0.9.20.mjs";
-
 import { EffectComposer } from 'https://cdn.jsdelivr.net/npm/three@0.137.5/examples/jsm/postprocessing/EffectComposer.js';
 import { RenderPass } from 'https://cdn.jsdelivr.net/npm/three@0.137.5/examples/jsm/postprocessing/RenderPass.js';
 import { ShaderPass } from 'https://cdn.jsdelivr.net/npm/three@0.137.5/examples/jsm/postprocessing/ShaderPass.js';
@@ -16,7 +15,7 @@ async function setupViewer() {
   });
 
   // Apply CSS filter to the canvas
-  // document.getElementById("webgi-canvas").style.filter = "saturate(1.80)";
+  document.getElementById("webgi-canvas").style.filter = "saturate(1.30)";
 
   await addBasePlugins(viewer, { interactionPrompt: false });
 
@@ -59,7 +58,7 @@ async function setupViewer() {
   const exposureShader = {
     uniforms: {
       "tDiffuse": { value: null },
-      "exposure": { value: 1.5 } // Adjust this value to increase or decrease exposure
+      "exposure": { value: 1.70 } // Adjust this value to increase or decrease exposure
     },
     vertexShader: `
       varying vec2 vUv;
