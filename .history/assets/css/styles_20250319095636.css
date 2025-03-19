@@ -68,7 +68,7 @@ body {
 	}
 
 	.container > section {
-		padding: 0 0 0 20%;
+		padding: 0 0 0 7%;
 		max-width: 32em;
 	}
 }
@@ -80,7 +80,7 @@ body {
 
 	.container > section {
 		padding: 0 20%;
-		max-width: 50em;
+		max-width: 40em;
 	}
 }
 

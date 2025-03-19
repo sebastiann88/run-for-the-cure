@@ -21,6 +21,10 @@ main.container section.animate__animated {
 	opacity: 1;
 }
 
+#webgi-canvas-container {
+margin: 0 auto;
+}
+
 body {
 	max-width: 100%;
 }
@@ -68,7 +72,7 @@ body {
 	}
 
 	.container > section {
-		padding: 0 0 0 20%;
+		padding: 0 0 0 7%;
 		max-width: 32em;
 	}
 }

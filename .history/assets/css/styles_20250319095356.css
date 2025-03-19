@@ -68,23 +68,23 @@ body {
 	}
 
 	.container > section {
-		padding: 0 0 0 20%;
+		padding: 0 0 0 7%;
 		max-width: 32em;
 	}
 }
 
-@media (min-width: 1450px) {
+@media (min-width: 1300px) {
 	body {
 		max-width: 85em;
 	}
 
 	.container > section {
 		padding: 0 20%;
-		max-width: 50em;
+		max-width: 65em;
 	}
 }
 
-@media (min-width: 1800px) {
+@media (min-width: 1400px) {
 	body {
 		max-width: 85em;
 	}
