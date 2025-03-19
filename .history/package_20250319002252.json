@@ -37,7 +37,7 @@
     "postprocessing": "^6.37.1",
     "@roboshoes/shader-pass": "^0.3.2",
     "gsap": "^3.12.7",
-    "imagesloaded": "^5.0.0",
+    "imagesloaded": "^1.0.0",
     "rollup-plugin-ignore": "^1.0.10",
     "scrolltrigger": "^1.0.1",
     "three-effectcomposer": "^0.0.1"
