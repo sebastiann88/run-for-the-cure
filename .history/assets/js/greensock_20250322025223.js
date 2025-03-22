@@ -33,6 +33,17 @@ gsap.to('.section-3', {
  	opacity: 1
 })
 
+gsap.to('.section-4', {
+	scrollTrigger: {
+		trigger: ".section-4",
+		toggleActions: "play none none reverse",
+		toggleClass: {targets: ".section-4", className: ".portfolio-hide"}
+
+	},
+ 	duration: 3.0,
+ 	opacity: 1
+})
+
 gsap.to('.portfolio-button-link', {
 	scrollTrigger: {
 		trigger: ".portfolio-fade-in-link",

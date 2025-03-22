@@ -16,13 +16,13 @@
 
 body {
   position: relative;
-  height: 185vh;
+  height: 300vh;
 }
 
 .portfolio-fade-in-link {
   position: absolute;
   bottom: 0;
-  margin-bottom: -35em;
+  margin-bottom: -82em;
 }
 
 canvas {
