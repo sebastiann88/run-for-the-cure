@@ -83,7 +83,7 @@ async function setupViewer() {
   };
 
   const exposurePass = new ShaderPass(exposureShader);
-  // composer.addPass(exposurePass);
+  composer.addPass(exposurePass);
 
   const saturationShader = {
     uniforms: {
@@ -111,7 +111,7 @@ async function setupViewer() {
   };
 
   const saturationPass = new ShaderPass(saturationShader);
-  // composer.addPass(saturationPass);
+  composer.addPass(saturationPass);
 
   const contrastShader = {
     uniforms: {
@@ -138,7 +138,7 @@ async function setupViewer() {
   };
 
   const contrastPass = new ShaderPass(contrastShader);
-  // composer.addPass(contrastPass);
+  composer.addPass(contrastPass);
 
   function animate() {
     requestAnimationFrame(animate);

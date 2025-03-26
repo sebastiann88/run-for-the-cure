@@ -138,7 +138,7 @@ async function setupViewer() {
   };
 
   const contrastPass = new ShaderPass(contrastShader);
-  // composer.addPass(contrastPass);
+  composer.addPass(contrastPass);
 
   function animate() {
     requestAnimationFrame(animate);
